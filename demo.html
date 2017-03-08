@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Language" content="zh-CN"/>
+    <title>Strophe.js Basic Example</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="strophe.js"></script>
+    <script src="wechat.js"></script>
+    <script src="subscribe.js"></script>
+    <script src="message.js"></script>
+    <script src="xml2json.js"></script>
+</head>
+<body>
+<div id='login' style='text-align: center'>
+    <form name='cred'>
+        <label for='jid'>JID:</label>
+        <input type='text' id='jid' value="alice@127.0.0.1">
+        <label for='pass'>Password:</label>
+        <input type='password' id='pass' value="123456">
+        <input type='button' id='connect' value='connect'>
+        <input type="button" id="query" value="query"/>
+        <input type="button" id="getlast" value="friends"/>
+        <input type="button" id="online" value="offline"/>
+        <input type="button" id="composing" value="composing"/>
+        <input type="button" id="paused" value="paused"/>
+        <input type="button" id="active" value="active"/>
+        <input type="button" id="inactive" value="inactive"/>
+        <input type="button" id="gone" value="gone"/>
+        <input type="button" id="clear" value="clear"/>
+        <input type="button" id="accept" value="accept"/>
+
+    </form>
+    <span>联系人</span>
+    <div>
+        <ul id="addlist">
+        </ul>
+        <ul id="friendlist">
+        </ul>
+    </div>
+    <label for="mss" id="msslaber">demo</label><textarea rows="2" id="mss"></textarea>
+    <button id="send">fasong</button>
+
+    <label for="addtext"></label><textarea rows="2" id="addtext"></textarea>
+    <button id="addf">添加</button>
+</div>
+<hr>
+<div id='log' style="height: 500px;overflow-y:auto"></div>
+</body>
+</html>
